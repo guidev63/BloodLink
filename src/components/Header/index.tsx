@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";  // Importação do Link para navegação
 import { IconLucideDroplet } from "../icons/IconLucideDroplet";
 import {
   HeaderContainer,
@@ -37,8 +38,15 @@ export function Header() {
         </div>
 
         <ButtonContainer>
-          <LoginButton>Login</LoginButton>
-          <RegisterButton>Register</RegisterButton>
+          {/* Botão de Login com navegação para a página de Login */}
+          <Link to="/login">
+            <LoginButton>Login</LoginButton>
+          </Link>
+
+          {/* Botão de Registro com navegação para uma página de registro (se existir) */}
+          <Link to="/register">
+            <RegisterButton>Register</RegisterButton>
+          </Link>
         </ButtonContainer>
       </HeaderContent>
 
