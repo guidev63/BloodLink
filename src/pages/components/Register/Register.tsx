@@ -1,4 +1,3 @@
-import React, { useState } from 'react';
 import { Droplet } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import {
@@ -13,6 +12,7 @@ import {
   Description,
   Label, // Adicionando o Label
 } from './styled';
+import { useState } from 'react';
 
 export function Register() {
   const [formData, setFormData] = useState({

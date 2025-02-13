@@ -1,5 +1,4 @@
 // src/pages/Login.tsx
-import React from 'react';
 import { 
   LoginContainer, 
   LoginBox, 

@@ -7,7 +7,6 @@ export const LoginContainer = styled.div`
   height: 100vh;
   background: linear-gradient(135deg, #c31432);
   width:100% ;
-  
 `;
 
 export const LoginBox = styled.div`
@@ -28,7 +27,6 @@ export const Logo = styled.div`
   font-size: 1.5rem;
   font-weight: bold;
   color: #fff;
-
   svg {
     color: #ff4d4d;
   }
@@ -84,7 +82,6 @@ export const FooterText = styled.p`
   margin-top: 15px;
   color: #aaa;
   font-size: 0.85rem;
-
   a {
     color: #ff4d4d;
     text-decoration: none;

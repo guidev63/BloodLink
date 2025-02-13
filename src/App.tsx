@@ -5,6 +5,8 @@ import { Transactions } from "./pages/Transactions";
 import { GlobalStyle } from "./styles/global";
 import { Login } from './pages/Login/Login';
 import { Register } from './pages/components/Register/Register';
+import Dashboard from './pages/Dashboard/Dashboard';  {/* Corrigido a importação */}
+
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
@@ -14,9 +16,10 @@ function App() {
       <TransactionsProvider>
         <Router>
           <Routes>
-            <Route path="/" element={<Transactions />} />  {/* Página inicial */}
-            <Route path="/login" element={<Login />} />     {/* Página de Login */}
-            <Route path="/register" element={<Register />} />  {/* Página de Registro */}
+            <Route path="/" element={<Transactions />} />
+            <Route path="/login" element={<Login />} /> 
+            <Route path="/register" element={<Register />} />
+            <Route path="/dashboard" element={<Dashboard />} />
           </Routes>
         </Router>
       </TransactionsProvider>
