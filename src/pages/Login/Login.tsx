@@ -19,10 +19,11 @@ export function Login() {
         <Logo>
           <IconLucideDroplet width="24px" height="24px" />
           BloodLink
+          
         </Logo>
 
-        <Title>Welcome back</Title>
-        <Subtitle>Enter your credentials to access your account</Subtitle>
+        <Title>Welcome Back</Title>
+        <Subtitle>Enter your credentials to access your Account</Subtitle>
 
         <Form>
           <div>
@@ -39,7 +40,7 @@ export function Login() {
         </Form>
 
         <FooterText>
-          Don’t have an account?
+          Don’t have an Account?
           <a href="/Register">Sign up</a>
         </FooterText>
       </LoginBox>

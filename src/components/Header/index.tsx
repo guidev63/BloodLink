@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";  // Importação do Link para navegação
-import { IconLucideDroplet } from "../icons/IconLucideDroplet";
+import { IconLucideDroplet } from "../icons/IconLucideDroplet";  // Ícone personalizado
 import {
   HeaderContainer,
   HeaderContent,
@@ -20,7 +20,9 @@ import {
 export function Header() {
   return (
     <HeaderContainer>
+      {/* 🔹 Cabeçalho principal */}
       <HeaderContent>
+        {/* 🔸 Logo */}
         <div style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
           <span
             style={{
@@ -37,22 +39,24 @@ export function Header() {
           </span>
         </div>
 
+        {/* 🔸 Botões de Login e Registro */}
         <ButtonContainer>
-          {/* Botão de Login com navegação para a página de Login */}
           <Link to="/login">
             <LoginButton>Login</LoginButton>
           </Link>
 
-          {/* Botão de Registro com navegação para uma página de registro (se existir) */}
           <Link to="/register">
             <RegisterButton>Register</RegisterButton>
           </Link>
         </ButtonContainer>
       </HeaderContent>
 
+      {/* 🔹 Seção de texto e imagem */}
       <ImageTextContainer>
         <TextContainer>
-          <h2>Save Lives Through <span style={{ color: "#d62839" }}>Blood Donation</span></h2>
+          <h2>
+            Save Lives Through <span style={{ color: "#d62839" }}>Blood Donation</span>
+          </h2>
           <p>
             Connect with hospitals and donors in your area. Make a difference in someone's life today.
           </p>
@@ -62,6 +66,7 @@ export function Header() {
           </ActionButtons>
         </TextContainer>
 
+        {/* 🔸 Imagem */}
         <ImageContainer>
           <img
             src="https://images.unsplash.com/photo-1615461066841-6116e61058f4?auto=format&fit=crop&w=1000&q=80"
@@ -70,6 +75,7 @@ export function Header() {
         </ImageContainer>
       </ImageTextContainer>
 
+      {/* 🔹 Informações rápidas */}
       <InfoContainer>
         <InfoCard>
           <h3>For Donors</h3>

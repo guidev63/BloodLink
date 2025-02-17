@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { Droplet } from "lucide-react";
 import {
   LineChart,
@@ -18,8 +19,9 @@ import {
   ProfileContainer,
   ProfileImage,
   ProfileName,
-  DashboardHeader, // Importação do novo estilo
-} from "./styled"; 
+  DashboardHeader,
+} from "./styled";
+
 
 const data = [
   { name: "Jan", value: 400 },
@@ -32,23 +34,29 @@ const data = [
 const Dashboard = () => {
   return (
     <Container>
+      {/* 🔹 Barra lateral */}
       <Sidebar>
-        {/* 🔹 Ícone ao lado do título Dashboard */}
         <DashboardHeader>
-          <Droplet size={24} color="#ff4d4d"  />
+          <Droplet size={24} color="#ff4d4d" />
           <h2>BloodLink</h2>
         </DashboardHeader>
 
         <Button>Home</Button>
+
+        {/* 🔹 Botão de cadastro de usuário */}
+        <Link to="/new-user">
+          <Button>Cadastrar Usuário</Button>
+        </Link>
       </Sidebar>
 
       <Content>
-        {/* 🔹 Perfil no canto superior direito */}
+      
         <ProfileContainer>
           <ProfileImage src="https://i.pravatar.cc/300" alt="User" />
           <ProfileName>Larissa Kich</ProfileName>
         </ProfileContainer>
 
+        {/* 🔹 Cards */}
         <CardContainer>
           <Card>
             <h3>Followers</h3>
@@ -68,6 +76,7 @@ const Dashboard = () => {
           </Card>
         </CardContainer>
 
+        {/* 🔹 Gráfico */}
         <ResponsiveContainer width="100%" height={300}>
           <LineChart data={data}>
             <CartesianGrid strokeDasharray="3 3" />
